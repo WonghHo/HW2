@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rotate Message</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="3-message.css" rel="stylesheet">
+    <style>
+        @media only screen and (orientation:landscape){
+  #turn{ display:block; }
+  #container{ display:none; }
+}
+@media only screen and (orientation:portrait){
+  #turn{ display:none; }
+  #container{ display:block; }
+}
+        </style>
+  </head>
+  <body>
+    <div id="turn">
+      Please rotate your device!
+    </div>
+    <div id="container">
+      Main contents here.
+    </div>
+  </body>
+</html>
