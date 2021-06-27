@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Rotate Message</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="3-message.css" rel="stylesheet">
+    <title>Forced Rotate</title>
+  <style>
+    @media only screen and (orientation:portrait){
+  body {
+    height: 100vw;
+    transform: rotate(90deg);
+  }
+}
+    </<style>
   </head>
   <body>
-    <div id="turn">
       Please rotate your device!
     </div>
-    <div id="container">
+    <div id="container"> 
       Main contents here.
     </div>
   </body>
